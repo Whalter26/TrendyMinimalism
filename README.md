@@ -1,5 +1,8 @@
 # 🎨 Trendy Minimalism — Responsive Landing Page
 
+## 🔗 Live Demo
+👉 [https://whalter26.github.io/TrendyMinimalism/]
+
 Responsive landing page for a creative community platform featuring interactive UI elements, adaptive layouts and touch-friendly interactions.
 
 The project was built independently to practice modern frontend development approaches, responsive design, component-based styling and user interaction patterns.
