@@ -164,8 +164,8 @@
    }
 
   &__tag {
+    border: 1px solid var(--color-light-alternate-mid);
     border-radius: var(--border-radius-large);
-    border: 1px solid red;
     text-align: center;
     align-self: center;
     padding: 15px 20px;
@@ -259,12 +259,6 @@
         background: linear-gradient(#000, #000) padding-box,
         var(--gradient) border-box;
         background-clip: padding-box, border-box;
-
-        @include media.mobile-s {
-         order: -1;
-
-          border: 1px solid rgba(255, 255, 255, 1)
-        }
       }
       &--dance {
         grid-column: 9 / 12;
@@ -303,6 +297,19 @@
       padding: 15px 20px;
 
       font-size: 17px;
+
+      &--performance {
+      border: 1px solid rgba(255, 255, 255, 1);
+      background: none;
+      -webkit-background-clip: initial;
+      background-clip: initial;
+
+      .hero__tag-text {
+        background: none;
+        -webkit-text-fill-color: initial;
+        color: inherit;
+      }
+    }
     }
   }
 }
