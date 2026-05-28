@@ -1,0 +1,145 @@
+@use '../media';
+@use '../mixins';
+
+.footer {
+  --footerBorder: 1px solid rgba(255, 255, 255, 0.15);
+
+
+
+    &__body {
+      padding-block: 100px 70px;
+
+      display: flex;
+      column-gap: clamp(15px, 4vw, 50px);
+      align-items: flex-start;
+
+      @include media.tablet {
+        padding-block: 80px 50px;
+      }
+
+      @include media.mobile {
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 30px
+      }
+    }
+
+  &__columns {
+    display: flex;
+    column-gap: clamp(15px, 4vw, 50px);
+
+    @include media.mobile {
+      column-gap: clamp(10px, 1vw, 150px);
+      justify-content: space-evenly;
+      width: 100%;
+    }
+
+    @include media.mobile-s {
+      justify-content: center;
+      column-gap: 48px;
+    }
+
+    @include media.mobile-n {
+      justify-content: space-between;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+
+
+    border-right: var(--footerBorder);
+    padding-right: 115px;
+
+    @include media.mobile {
+      padding-right: 50px;
+    }
+  }
+
+  &__join-us {
+    @include media.mobile-s {
+      padding-right: 84px;
+    }
+
+    @include media.mobile-n {
+      padding-right: 65px;
+    }
+  }
+
+  &__contact-us {
+    @include media.mobile-s {
+      border-right: none;
+      padding-right: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+  }
+
+  &__link {
+    color: var(--color-light);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+
+    position: relative;
+    @include media.link-gradient
+  }
+
+  &__contact-us-list {
+    padding-bottom: 31px;
+  }
+
+  &__description {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding-bottom: 25px;
+
+    color: var(--color-light-alternate-mid);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+
+    @include media.mobile {
+      padding-top: 30px;
+      border-top: var(--footerBorder);
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+
+    @include media.mobile-n {
+      text-align: left;
+    }
+  }
+
+  &__developer-bar {
+    background: var(--Linear, linear-gradient(-55.78deg, rgba(205, 165, 213, 1) 0%,rgba(250.57, 228.44, 255, 1) 47%,rgba(232, 254, 116, 1) 100%));
+
+    display: grid;
+    place-items: center;
+    padding-block: 15px;
+  }
+
+  &__made-by {
+    color: var(--color-dark);
+  }
+
+  &__dev-link {
+    color: var(--color-dark);
+
+    @include media.link-gradient-yellow
+  }
+
+}

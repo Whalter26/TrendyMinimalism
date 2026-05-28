@@ -1,0 +1,158 @@
+@use '../media';
+@use '../mixins';
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 25px 30px 27px;
+  border: var(--border-light);
+  border-radius: var(--border-radius);
+
+  .accordion__indicator-text::before {
+    content: "More";
+  }
+
+  &[open] {
+    border: 2px solid transparent;
+    background:
+      linear-gradient(#050508, #050508) padding-box,
+      linear-gradient(135deg,
+      #fff475 0%,
+      #cca0ff 40%,
+      #442b66 70%,
+      #13131a 100%
+      ) border-box;
+
+    .accordion__indicator-icon {
+      transform: rotate(180deg);
+    }
+
+    .accordion__indicator-text::before {
+      content: "Less";
+    }
+  }
+
+  &__header {
+    list-style: none;
+
+    outline: none;
+
+    &:focus-visible {
+      box-shadow: 0 1px 0 0 #d4ff3b;
+    }
+
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+    @include media.mobile {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      row-gap: 20px;
+    }
+  }
+
+  &__title {
+    flex-basis: 63%;
+    flex-shrink: 0;
+    text-wrap: nowrap;
+
+    @include media.tablet {
+      flex-basis: 49%;
+    }
+
+    @include media.mobile {
+      flex-basis: auto;
+      grid-row: 1;
+      grid-column: 1;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @include media.desktop {
+       column-gap: 40px;
+     }
+
+    @include media.mobile {
+      display: contents;
+    }
+  }
+
+  &__date,
+  &__location,
+  &__indicator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @include media.mobile {
+      white-space: nowrap;
+    }
+  }
+
+  &__date {
+    @include media.mobile {
+      grid-row: 2;
+      grid-column: 1 / span 2;
+      margin-right: 30px;
+    }
+  }
+
+  &__location {
+    @include media.mobile {
+      grid-row: 2;
+      grid-column: 1;
+      margin-left: 110px;
+    }
+
+    @include media.mobile-n {
+      margin-left: 110px;
+    }
+  }
+
+  &__indicator {
+    color: var(--color-purple);
+
+    @include media.mobile {
+      grid-row: 1;
+      grid-column: 2;
+    }
+  }
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+    &__content-sign {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--color-purple);
+    }
+
+  &__content-sign-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    @include media.link-gradient-yellow;
+
+  }
+}

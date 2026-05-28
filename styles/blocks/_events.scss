@@ -1,0 +1,23 @@
+@use '../media';
+@use '../mixins';
+
+.events {
+  &__body {
+    margin-top: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    width: 295px;
+
+    @include media.mobile-s {
+      width: 100%;
+    }
+  }
+  }

@@ -1,0 +1,1121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <link
+    rel="stylesheet"
+    href="./styles/styles.css"
+  >
+  <title>Trendy Minimalist Landing Page</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner container">
+    <a
+      class="header__logo"
+      href="/"
+    >
+      Minders
+    </a>
+    <nav class="header__menu hidden-mobile">
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+          <a
+            class="header__menu-link"
+            href="/"
+          >
+            About us
+          </a>
+        </li>
+        <li class="header__menu-item">
+          <a
+            class="header__menu-link"
+            href="/"
+          >
+            Our team
+          </a>
+        </li>
+        <li class="header__menu-item">
+          <a
+            class="header__menu-link"
+            href="/"
+          >
+            Events
+          </a>
+        </li>
+        <li class="header__menu-item">
+          <a
+            class="header__menu-link"
+            href="#join-us"
+          >
+            Join us
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="header__burger-button burger-button visible-mobile"
+      type="button"
+      onclick="mobileOverlay.showModal()"
+    >
+      <span class="visually-hidden">Open navigation menu</span>
+    </button>
+  </div>
+</header>
+<main class="content">
+  <section class="section container">
+    <div class="hero">
+      <h1 class="section-title section-title--light hero__title">
+        <span class="section-title__first-line"> Discover the endless </span>
+        <span class="section-title__second-line">possibilities of creativity</span>
+      </h1>
+      <div class="hero__visual">
+        <picture>
+          <source
+            srcset="images/hero-image-mobile.png"
+            media="(max-width:480px)"
+          >
+          <img
+            class="hero__image"
+            src="images/hero-image.png"
+            alt=""
+            aria-hidden="true"
+            width="1240"
+            height="505"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <div class="hero__body">
+        <div class="hero__description">
+          <h2 class="section-title section-title--light hero__subtitle">
+            <span class="section-title__first-line">Showcasing diversity</span>
+            <span class="section-title__second-line">and promoting artists</span>
+          </h2>
+          <p class="hero__text">
+            Our community is made up of talented artists from around the world who share a common passion for contemporary art. We seek to showcase the diversity of artistic expressions and provide a platform for emerging artists to promote their work. With a focus on collaboration and innovation, we strive to push the boundaries of creativity and inspire future generations of artists.
+          </p>
+          <a
+            class="button button--purple hero__button"
+            href="#join-us"
+          >
+            Join us
+          </a>
+        </div>
+        <div
+          class="hero__tags"
+          aria-hidden="true"
+        >
+          <span class="hero__tag hero__tag--photography">photography</span>
+          <span class="hero__tag hero__tag--music">music</span>
+          <span class="hero__tag hero__tag--ai">AI art</span>
+          <span class="hero__tag hero__tag--poetry">poetry</span>
+          <span class="hero__tag hero__tag--architecture">architecture</span>
+          <span class="hero__tag hero__tag--handmade">handmade</span>
+          <span class="hero__tag hero__tag--perfomance"><span class="hero__tag-text">perfomance</span></span>
+          <span class="hero__tag hero__tag--dance">dance</span>
+          <span class="hero__tag hero__tag--design">design</span>
+          <span class="hero__tag hero__tag--fashion">fashion</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section creators">
+    <div class="creators__container container">
+      <h2 class="section-title section-title--dark creators__title">
+        <span class="section-title__first-line">The creative minds that</span>
+        <span class="section-title__second-line">power our projects</span>
+      </h2>
+      <div class="creators__body">
+        <div class="creators__slider slider">
+          <div
+            class="slider__drag-hint hidden-mobile"
+            aria-hidden="true"
+          >
+            <svg
+              class="arrow arrow-left"
+              width="12"
+              height="24"
+              viewBox="0 0 9 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 1L1 8L8 15"
+                stroke="#06050F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="slider__drag-hint-text">Drag</span>
+            <svg
+              class="arrow arrow-right"
+              width="12"
+              height="24"
+              viewBox="0 0 9 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L8 8L1 15"
+                stroke="#06050F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <ul
+            class="slider__list"
+            tabindex="0"
+          >
+            <li class="slider__item">
+              <article
+                class="slider__card card"
+                tabindex="0"
+              >
+                <div class="card__image-wrap">
+                  <img
+                    class="card__image slider__image"
+                    src="./images/slider/1.png"
+                    alt="Portrait of Jonathan Borda"
+                    width="385"
+                    height="460"
+                    loading="lazy"
+                  />
+                </div>
+                <div
+                  class="card__hint"
+                  aria-hidden="true"
+                >
+                  Tap to read
+                </div>
+                <div class="card__content card1-content">
+                  <h3 class="card__title">
+                 <span class="card__title-first-line">
+                   Jonathan Borda,
+                 </span>
+                    <span class="card__title-second-line">
+                   instructional designer
+                 </span>
+                  </h3>
+                  <p class="card__text">
+                    Every project at Minders brings endless opportunities. Developing complex educational systems keeps me inspired because our team always produces truly advanced learning journeys.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="slider__item">
+              <article
+                class="slider__card card"
+                tabindex="0"
+              >
+                <div class="card__image-wrap">
+                  <img
+                    class="card__image slider__image"
+                    src="./images/slider/2.png"
+                    alt="Portrait of Ian Dooley"
+                    width="385"
+                    height="460"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">
+                 <span class="card__title-first-line">
+                   Ian Dooley,
+                 </span>
+                    <span class="card__title-second-line">
+                   graphic designer
+                 </span>
+                  </h3>
+                  <p class="card__text">
+                    The creative freedom here is absolutely unmatched. Turning abstract corporate ideas into striking visual artwork makes me proud of our exceptional design studio.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="slider__item">
+              <article
+                class="slider__card card"
+                tabindex="0"
+              >
+                <div class="card__image-wrap">
+                  <img
+                    class="card__image slider__image"
+                    src="./images/slider/3.png"
+                    alt="Portrait of Gary Bennett"
+                    width="385"
+                    height="460"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">
+                 <span class="card__title-first-line">
+                   Gary Bennett,
+                 </span>
+                    <span class="card__title-second-line">
+                   lead designer
+                 </span>
+                  </h3>
+                  <p class="card__text">
+                    I love working at Minders. it's an incredibly dynamic and supportive creative community that fosters collaboration
+                    and innovation, leading to truly
+                    exceptional design work.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="slider__item">
+              <article
+                class="slider__card card"
+                tabindex="0"
+              >
+                <div class="card__image-wrap">
+                  <img
+                    class="card__image slider__image"
+                    src="./images/slider/4.png"
+                    alt="Portrait of Attila Horvath"
+                    width="385"
+                    height="460"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">
+                 <span class="card__title-first-line">
+                   Attila Horvath,
+                 </span>
+                    <span class="card__title-second-line">
+                   graphic designer
+                 </span>
+                  </h3>
+                  <p class="card__text">
+                    Brainstorming with this passionate crew feels incredibly rewarding. We push stylistic boundaries daily, combining fresh trends with classic rules to deliver top-tier branding products.
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section container">
+    <div class="events">
+      <h2 class="section-title section-title--light events__title">
+        <span class="section-title__first-line">
+          Keep up to date
+        </span>
+        <span class="section-title__second-line">
+          with our latest events
+        </span>
+      </h2>
+      <div class="events__body">
+        <ul class="events__list">
+          <li class="events__item">
+            <details class="events__accordion accordion">
+              <summary class="accordion__header">
+                <h3 class="accordion__title">
+                  BrushBush
+                </h3>
+                <span class="accordion__info">
+                  <span class="accordion__date">
+                    <svg
+                      class="accordion__date-icon"
+                      width="24"
+                      height="24"
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+<path
+  d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M16 2V6"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M8 2V6"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M3 10H21"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+
+</svg>
+ <span class="accordion__date-text">June 22</span>
+                  </span>
+
+<span class="accordion__location">
+ <svg
+   class="accordion__location-icon"
+   width="24"
+   height="24"
+   aria-hidden="true"
+   viewBox="0 0 24 24"
+   fill="none"
+   xmlns="http://www.w3.org/2000/svg"
+ >
+<path
+  d="M3 11L22 2L13 21L11 13L3 11Z"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+</svg>
+  <span class="accordion__location-text">Tokio</span>
+
+
+</span>
+
+                  <span class="accordion__indicator">
+  <span class="accordion__indicator-text"></span>
+  <svg
+    class="accordion__indicator-icon"
+    width="16"
+    height="9"
+    aria-hidden="true"
+    viewBox="0 0 16 9"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+<path
+  d="M15 1L8 8L1 1"
+  stroke="#CDA5D5"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+</svg>
+</span>
+                </span>
+              </summary>
+              <div class="accordion__content">
+                <p class="accordion__content-text">
+                  Are you ready to unleash your inner artist in the heart of Tokyo? Then BrushBush is the perfect event for you! Join us at a stunning, neon-lit underground studio and mingle with like-minded people who share your passion for bold strokes and modern art. Enjoy an atmospheric electronic live set, experiment with glowing paints under cyber-vibes, and discover the beauty of abstract creativity! Sign up on the waiting list now and get ready for an unforgettable experience.
+                </p>
+                <span class="accordion__content-sign">
+                  <svg
+                    class="accordion__content-sign-image"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+<path
+  d="M15 10L20 15L15 20"
+  stroke="#06050F"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M4 4V11C4 12.0609 4.42143 13.0783 5.17157 13.8284C5.92172 14.5786 6.93913 15 8 15H20"
+  stroke="#06050F"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+</svg>
+
+                  <a
+                    class="accordion__content-sign-link"
+                    href="#join-us"
+                  >
+                    Sign up on the waiting list
+                  </a>
+                </span>
+              </div>
+            </details>
+          </li>
+          <li class="events__item">
+            <details class="events__accordion accordion">
+              <summary class="accordion__header">
+                <h3 class="accordion__title">
+                  Art Morning
+                </h3>
+                <span class="accordion__info">
+                  <span class="accordion__date">
+                    <svg
+                      class="accordion__date-icon"
+                      width="24"
+                      height="24"
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+<path
+  d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M16 2V6"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M8 2V6"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M3 10H21"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+
+</svg>
+ <span class="accordion__date-text">May 21</span>
+                  </span>
+
+                    <span class="accordion__location">
+ <svg
+   class="accordion__location-icon"
+   width="24"
+   height="24"
+   aria-hidden="true"
+   viewBox="0 0 24 24"
+   fill="none"
+   xmlns="http://www.w3.org/2000/svg"
+ >
+<path
+  d="M3 11L22 2L13 21L11 13L3 11Z"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+</svg>
+  <span class="accordion__location-text">New York</span>
+
+
+</span>
+
+                    <span class="accordion__indicator">
+  <span class="accordion__indicator-text"></span>
+  <svg
+    class="accordion__indicator-icon"
+    width="16"
+    height="9"
+    aria-hidden="true"
+    viewBox="0 0 16 9"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+<path
+  d="M15 1L8 8L1 1"
+  stroke="#CDA5D5"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+</svg>
+</span>
+                  </span>
+              </summary>
+              <div class="accordion__content">
+                <p class="accordion__content-text">
+                  Are you an art lover? Ready to explore the depths of creativity and philosophy? Then Art Morning is the perfect event for you! Join us at a secret rooftop lounge bar in New York City and mingle with like-minded people who share your passion for art. Enjoy a DJ set, discuss philosophical questions about art and its creator, and discover the beauty of creativity! Sign up on the waiting list now and get ready for an unforgettable experience.
+                </p>
+                <span class="accordion__content-sign">
+                  <svg
+                    class="accordion__content-sign-image"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+<path
+  d="M15 10L20 15L15 20"
+  stroke="#06050F"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M4 4V11C4 12.0609 4.42143 13.0783 5.17157 13.8284C5.92172 14.5786 6.93913 15 8 15H20"
+  stroke="#06050F"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+</svg>
+
+                  <a
+                    class="accordion__content-sign-link"
+                    href="#join-us"
+                  >
+                    Sign up on the waiting list
+                  </a>
+                </span>
+              </div>
+            </details>
+          </li>
+          <li class="events__item">
+            <details class="events__accordion accordion">
+              <summary class="accordion__header">
+                <h3 class="accordion__title">
+                  Palette Party
+                </h3>
+                <span class="accordion__info">
+                  <span class="accordion__date">
+                    <svg
+                      class="accordion__date-icon"
+                      width="24"
+                      height="24"
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+<path
+  d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M16 2V6"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M8 2V6"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M3 10H21"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+
+</svg>
+ <span class="accordion__date-text">July 2</span>
+                  </span>
+
+                    <span class="accordion__location">
+ <svg
+   class="accordion__location-icon"
+   width="24"
+   height="24"
+   aria-hidden="true"
+   viewBox="0 0 24 24"
+   fill="none"
+   xmlns="http://www.w3.org/2000/svg"
+ >
+<path
+  d="M3 11L22 2L13 21L11 13L3 11Z"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+</svg>
+  <span class="accordion__location-text">Paris</span>
+
+
+</span>
+
+                    <span class="accordion__indicator">
+  <span class="accordion__indicator-text"></span>
+  <svg
+    class="accordion__indicator-icon"
+    width="16"
+    height="9"
+    aria-hidden="true"
+    viewBox="0 0 16 9"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+<path
+  d="M15 1L8 8L1 1"
+  stroke="#CDA5D5"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+</svg>
+</span>
+                  </span>
+              </summary>
+              <div class="accordion__content">
+                <p class="accordion__content-text">
+                  Are you looking for a night of elegance, color, and romance in Paris? Then Palette Party is the perfect event for you! Join us at an exquisite gallery loft overlooking the Seine and mingle with like-minded people who share your passion for classic and contemporary aesthetics. Enjoy a live jazz performance, sip fine wine while mixing your own unique color palettes, and discover the beauty of Parisian art culture! Sign up on the waiting list now and get ready for an unforgettable experience.
+                </p>
+                <span class="accordion__content-sign">
+                  <svg
+                    class="accordion__content-sign-image"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+<path
+  d="M15 10L20 15L15 20"
+  stroke="#06050F"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M4 4V11C4 12.0609 4.42143 13.0783 5.17157 13.8284C5.92172 14.5786 6.93913 15 8 15H20"
+  stroke="#06050F"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+</svg>
+
+                  <a
+                    class="accordion__content-sign-link"
+                    href="#join-us"
+                  >
+                    Sign up on the waiting list
+                  </a>
+                </span>
+              </div>
+            </details>
+          </li>
+          <li class="events__item">
+            <details class="events__accordion accordion">
+              <summary class="accordion__header">
+                <h3 class="accordion__title">
+                  Vibe & Vibrant
+                </h3>
+                <span class="accordion__info">
+                  <span class="accordion__date">
+                    <svg
+                      class="accordion__date-icon"
+                      width="24"
+                      height="24"
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+<path
+  d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M16 2V6"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M8 2V6"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M3 10H21"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+
+</svg>
+ <span class="accordion__date-text">August 8</span>
+                  </span>
+
+                    <span class="accordion__location">
+ <svg
+   class="accordion__location-icon"
+   width="24"
+   height="24"
+   aria-hidden="true"
+   viewBox="0 0 24 24"
+   fill="none"
+   xmlns="http://www.w3.org/2000/svg"
+ >
+<path
+  d="M3 11L22 2L13 21L11 13L3 11Z"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+</svg>
+  <span class="accordion__location-text">Burgas</span>
+
+
+</span>
+
+                    <span class="accordion__indicator">
+  <span class="accordion__indicator-text"></span>
+  <svg
+    class="accordion__indicator-icon"
+    width="16"
+    height="9"
+    aria-hidden="true"
+    viewBox="0 0 16 9"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+<path
+  d="M15 1L8 8L1 1"
+  stroke="#CDA5D5"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+</svg>
+</span>
+                  </span>
+              </summary>
+              <div class="accordion__content">
+                <p class="accordion__content-text">
+                  Are you craving an explosion of energy, coastal vibes, and vivid emotions? Then Vibe & Vibrant is the perfect event for you! Join us at a beautiful open-air beach club in Burgas and mingle with like-minded people who share your passion for street art and summer freedom. Enjoy a dynamic house DJ set, watch live graffiti performances right by the sea, and discover the beauty of raw, vibrant creativity! Sign up on the waiting list now and get ready for an unforgettable experience.
+                </p>
+                <span class="accordion__content-sign">
+                  <svg
+                    class="accordion__content-sign-image"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+<path
+  d="M15 10L20 15L15 20"
+  stroke="#06050F"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+<path
+  d="M4 4V11C4 12.0609 4.42143 13.0783 5.17157 13.8284C5.92172 14.5786 6.93913 15 8 15H20"
+  stroke="#06050F"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+</svg>
+
+                  <a
+                    class="accordion__content-sign-link"
+                    href="#join-us"
+                  >
+                    Sign up on the waiting list
+                  </a>
+                </span>
+              </div>
+            </details>
+          </li>
+        </ul>
+        <a
+          class="button button--purple events__button"
+          href="/"
+        >
+          View calendar
+        </a>
+      </div>
+    </div>
+  </section>
+  <section
+    class="container"
+    id="join-us"
+  >
+    <div class="community">
+      <div class="community__body">
+        <div class="community__header">
+          <h2 class="section-title section-title--dark community__title">
+          <span class="section-title__first-line">
+            Join our community
+          </span>
+            <span class="section-title__second-line">
+            of talented artists
+          </span>
+          </h2>
+        </div>
+        <div class="community__description">
+          <p class="community__description-text">
+            Are you an artist looking to showcase your work and connect with other creatives? Fill out our application form and join our community of talented artists. We can't wait to see what you have to offer.
+          </p>
+        </div>
+      </div>
+      <div class="community__registration">
+        <form
+          class="community__form"
+          id="join"
+        >
+          <h2 class="visually-hidden">Subscription</h2>
+          <div class="community__field field">
+            <input
+              type="text"
+              class="field__input"
+              id="fullname"
+              name="fullname"
+              placeholder=" "
+              required
+            >
+            <label
+              for="fullname"
+              class="field__label"
+            >Full name</label>
+          </div>
+          <div class="community__field field">
+            <input
+              type="text"
+              class="field__input"
+              id="occupation"
+              name="occupation"
+              placeholder=" "
+              required
+            >
+            <label
+              for="occupation"
+              class="field__label"
+            >Occupation</label>
+          </div>
+          <div class="community__field field">
+            <input
+              type="tel"
+              class="field__input"
+              id="phone"
+              name="phone"
+              placeholder=" "
+              required
+            >
+            <label
+              for="phone"
+              class="field__label"
+            >Phone number</label>
+          </div>
+          <div class="community__field field">
+            <input
+              type="email"
+              class="field__input"
+              id="email"
+              name="email"
+              placeholder=" "
+              required
+            >
+            <label
+              for="email"
+              class="field__label"
+            >E-mail</label>
+          </div>
+        </form>
+        <button
+          class="community__button button--yellow button"
+          type="submit"
+          form="join"
+        >
+          Apply
+        </button>
+        <p class="community__terms">
+          By clicking the button, you agree to our
+          <a
+            class="community__terms-link"
+            href="/"
+          >terms and conditions.
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__body container">
+    <div class="footer__columns">
+      <div class="footer__column footer__join-us">
+        <p class="footer__join-us-title">Join us:</p>
+        <ul class="footer__join-us-list footer__list">
+          <li class="footer__join-us-item footer__item">
+            <a
+              class="footer__join-us-link footer__link"
+              href="https://www.instagram.com"
+            >
+              Instagram
+            </a>
+          </li>
+          <li class="footer__join-us-item footer__item">
+            <a
+              class="footer__join-us-link footer__link"
+              href="https://www.facebook.com"
+            >
+              Facebook
+            </a>
+          </li>
+          <li class="footer__join-us-item footer__item">
+            <a
+              class="footer__join-us-link footer__link"
+              href="https://www.youtube.com"
+            >
+              Youtube
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__column footer__contact-us">
+        <p class="footer__contact-us-title">Contact us:</p>
+        <ul class="footer__contact-us-list footer__list">
+          <li class="footer__contact-us-item footer__item">
+            <a
+              class="footer__contact-us-link footer__link"
+              href="mailto:support@minders.com"
+            >
+              support@minders.com
+            </a>
+          </li>
+          <li class="footer__contact-us-item footer__item">
+            <a
+              class="footer__contact-us-link footer__link"
+              href="tel:+12345678910"
+            >
+              +123 4567 89 10
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__description">
+      <p class="footer__info">
+        The information on this website is provided for general informational purposes only and does not constitute legal or professional advice. The information is accurate to the best of our knowledge for USA law. Use of this website constitutes acceptance of our
+        <a
+          class="footer__link"
+          href="/"
+        >Terms of Use
+        </a>
+        and
+        <a
+          class="footer__link"
+          href="/"
+        >Privacy Policy
+        </a>
+        .
+      </p>
+      <p class="footer__copyright">
+        All rights reserved. ©2021-2023 Minders.
+      </p>
+    </div>
+  </div>
+  <div class="footer__developer-bar">
+    <p class="footer__made-by">
+      Made by
+      <a
+        class="footer__dev-link"
+        href="#"
+      >
+        @iceyjuly
+      </a>
+      template
+    </p>
+  </div>
+</footer>
+<dialog
+  class="mobile-overlay visible-mobile"
+  id="mobileOverlay"
+>
+  <form
+    class="mobile-overlay__close-button-wrapper"
+    method="dialog"
+  >
+    <button
+      class="mobile-overlay__close-button cross-button"
+      type="submit"
+    >
+   <span class="visually-hidden">
+     Close navigation menu
+   </span>
+    </button>
+  </form>
+  <div class="mobile-overlay__body">
+    <ul class="mobile-overlay__list">
+      <li class="mobile-overlay__item">
+        <a
+          class="mobile-overlay__link"
+          href="/"
+        >
+          About us
+        </a>
+      </li>
+      <li class="mobile-overlay__item">
+        <a
+          class="mobile-overlay__link"
+          href="/"
+        >
+          Our team
+        </a>
+      </li>
+      <li class="mobile-overlay__item">
+        <a
+          class="mobile-overlay__link"
+          href="/"
+        >
+          Events
+        </a>
+      </li>
+      <li class="mobile-overlay__item">
+        <a
+          class="mobile-overlay__link"
+          href="#join-us"
+          onclick="mobileOverlay.close()"
+        >
+          Join us
+        </a>
+      </li>
+    </ul>
+  </div>
+</dialog>
+<script src="./scripts/slider.js"></script>
+</body>
+</html>

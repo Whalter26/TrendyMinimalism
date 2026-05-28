@@ -1,0 +1,33 @@
+@use '../mixins';
+@use '../media';
+
+.burger-button {
+  @include  mixins.reset-button;
+  @include mixins.square(48px);
+
+  border-radius: var(--border-radius);
+
+ @include media.hover {
+   background: linear-gradient(90deg, #9b7cff, #4dd0e1);
+ }
+
+  position: relative;
+  line-height: 48px;
+  &::after {
+    @include mixins.abc-center;
+
+    content: '';
+    width: 50%;
+    height: 2px;
+    background-color: var(--color-light);
+    border-radius: 3px;
+    box-shadow: 0 -8px var(--color-light), 0 8px var(--color-light);
+    color: var(--color-light);
+  }
+
+  &:focus-visible {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 6px rgba(155, 124, 255, 0.8))
+    drop-shadow(0 0 2px rgba(77, 208, 225, 0.5));
+  }
+}

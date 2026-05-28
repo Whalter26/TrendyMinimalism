@@ -1,0 +1,8 @@
+@use '../media';
+@use '../mixins';
+
+.section {
+  padding-top: var(--container-padding-y-top);
+  padding-bottom: var(--container-padding-y);
+
+}

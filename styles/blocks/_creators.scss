@@ -1,0 +1,9 @@
+.creators {
+    background-color: var(--color-yellow);
+
+   &__container {
+       display: flex;
+       flex-direction: column;
+       row-gap: 40px;
+   }
+}

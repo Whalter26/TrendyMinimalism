@@ -1,0 +1,73 @@
+.field {
+  --fieldInputHeight: 65px;
+  --fieldInputTextColor: var(--color-dark);
+  --fieldInputBgColor: transparent;
+  --fieldInputBorderColor: rgba(6, 5, 15, 0.3);
+  --fieldInputBorder: 1px solid var(--fieldInputBorderColor);
+  --fieldInputBorderRadius: var(--border-radius);
+  --fieldInputPlaceholderColor: var(--color-dark-alternate);
+
+  --color-neon-lime: #d4ff3b;
+
+  position: relative;
+  height: var(--fieldInputHeight);
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--fieldInputBgColor);
+  border: var(--fieldInputBorder);
+  border-radius: var(--fieldInputBorderRadius);
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: rgba(6, 5, 15, 0.7);
+  }
+
+  &:focus-within {
+    transform: translateY(-2px);
+    border-color: #00e5ff;
+
+
+    box-shadow:
+      0 0 0 1px #d4ff3b,
+      0 8px 20px rgba(212, 255, 59, 0.45),
+      0 0 15px rgba(0, 229, 255, 0.35);
+  }
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: var(--fieldInputTextColor);
+    font-size: 16px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 26px 16px 6px 16px;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+
+  }
+
+  &__label {
+    font-size: 16px;
+    color: var(--fieldInputPlaceholderColor);
+    pointer-events: none;
+
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__input:focus ~ &__label,
+  &__input:not(:placeholder-shown) ~ &__label {
+    top: 12px;
+    transform: translateY(0);
+    font-size: 12px;
+  }
+
+}

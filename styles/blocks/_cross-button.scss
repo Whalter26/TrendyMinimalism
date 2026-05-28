@@ -1,0 +1,36 @@
+@use '../mixins';
+@use '../media';
+
+.cross-button {
+  @include mixins.reset-button;
+  @include mixins.square(48px);
+
+  position: relative;
+
+  border-radius: var(--border-radius);
+  background-color: var(--color-dark);
+
+  @include media.hover {
+    background: linear-gradient(90deg, #9b7cff, #4dd0e1);
+  }
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    width: 70%;
+    height: 2px;
+    background-color: var(--color-light);
+    border-radius: 5px;
+  }
+
+  &::before {
+    rotate: 45deg;
+  }
+
+  &::after {
+     rotate: -45deg;
+  }
+
+}

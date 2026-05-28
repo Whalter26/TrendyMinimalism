@@ -1,0 +1,45 @@
+@use 'mixins';
+@use 'media';
+
+:root {
+  --color-dark: #06050F;
+  --color-light: #fff;
+  --color-purple: #cda5d5;
+  --color-yellow: #e8fe74;
+  --color-dark-alternate: rgba(6, 5, 15, 0.4);
+  --color-light-alternate: rgba(255, 255, 255, 0.3);
+  --color-light-alternate-mid: rgba(255, 255, 255, 0.5);
+
+  --border-light: 1px solid var(--color-light-alternate);
+  --border-black: 1px solid var(--color-dark-alternate);
+
+  --border-radius: 20px;
+  --border-radius-large: 50px;
+
+  --gradient: linear-gradient(-55.78deg, rgb(205, 165, 213), rgb(251, 228, 255), rgb(232, 254, 116));
+
+  --font-family-base: 'Schibsted G', sans-serif;
+
+  --container-width: 1240px;
+
+  --container-padding-x: 20px;
+  
+  --container-padding-y: 100px;
+
+  --container-padding-y-top: 90px;
+
+  --button-height: 65px;
+
+  --transition-duration: 0.2s;
+
+  @include media.mobile {
+    --container-padding-y-top: 60px;
+    --container-padding-x: 15px;
+  }
+
+  @include media.tablet {
+    --container-padding-y-top: 60px;
+    --container-padding-y: 40px;
+  }
+}
+

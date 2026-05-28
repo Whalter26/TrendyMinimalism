@@ -1,0 +1,29 @@
+@use '../media';
+@use '../mixins';
+
+
+.section-title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-wrap: wrap;
+
+   &--light {
+
+     .section-title__first-line {
+       color: var(--color-light-alternate);
+     }
+   }
+
+  &--dark {
+    .section-title__first-line {
+      color: var(--color-dark-alternate);
+    }
+
+    .section-title__second-line {
+      color: var(--color-dark);
+    }
+  }
+}
+
+

@@ -1,0 +1,67 @@
+@use '../media';
+@use '../mixins';
+
+.slider {
+  position: relative;
+
+
+&:has(.slider__list:hover) .slider__drag-hint,
+&:has(.slider__list:active) .slider__drag-hint {
+  opacity: 0;
+  visibility: hidden;
+}
+
+  &__drag-hint {
+    width: 160px;
+    height: 160px;
+    background-color: rgba(255, 255, 255, 1);
+    color:  rgba(6, 5, 15, 1);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 25px;
+    pointer-events: none;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 10;
+
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    translate: 0 -50%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+
+    @include media.mobile {
+      column-gap: 15px;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #000;
+      outline-offset: 4px;
+    }
+
+  }
+
+  &__item {
+    flex: 0 0 385px;
+    scroll-snap-align: start;
+
+    @include media.mobile {
+      flex: 0 0 323px;
+    }
+    @include media.mobile-s {
+      flex: 0 0 270px;
+    }
+  }
+    }
+

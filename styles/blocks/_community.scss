@@ -1,0 +1,84 @@
+@use '../media';
+@use '../mixins';
+
+
+.community {
+   background-color: var(--color-purple);
+   border-radius: 80px;
+   padding: 80px;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   column-gap: 80px;
+
+   @include media.mobile {
+      flex-direction: column;
+      padding: 60px 60px 10px;
+      row-gap: 40px;
+   }
+
+   @include media.mobile-s {
+      border-radius: 0;
+      padding: 40px 15px 50px;
+
+      margin-inline: -15px;
+      width: calc(100% + 30px);
+   }
+
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 30px;
+      flex-basis: 500px;
+
+      @include media.mobile {
+         justify-content: flex-start;
+         flex-basis: auto;
+      }
+   }
+
+      &__description {
+         color: var(--color-dark);
+      }
+
+     &__registration {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        flex-basis: 500px;
+     }
+
+     &__form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+     }
+
+   &__field {
+      @include media.mobile {
+         max-width: 100%;
+      }
+   }
+
+   &__terms {
+      color: var(--color-dark-alternate);
+      width: 100%;
+
+      &-link {
+      color: var(--color-dark);
+         display: inline-block;
+
+         @include media.link-gradient-yellow
+      }
+   }
+
+  &__button {
+     @include media.mobile-s {
+        width: 100%;
+     }
+  }
+
+}

@@ -1,0 +1,24 @@
+@use 'normalize';
+@use 'fonts';
+@use 'mixins';
+@use 'media';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/field';
+@use 'blocks/burger-button';
+@use 'blocks/cross-button';
+@use 'blocks/button';
+@use 'blocks/section-title';
+@use 'blocks/header';
+@use 'blocks/mobile-overlay';
+@use 'blocks/section';
+@use 'blocks/hero';
+@use 'blocks/card';
+@use 'blocks/slider';
+@use 'blocks/creators';
+@use 'blocks/accordion';
+@use 'blocks/events';
+@use 'blocks/community';
+@use 'blocks/footer';

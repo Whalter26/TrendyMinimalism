@@ -1,0 +1,153 @@
+$desktop-above: 1281px;
+$desktop: 1280px;
+
+$tablet-above: 1024px;
+$tablet: 1023px;
+
+$mobile-above: 768px;
+$mobile: 767px;
+
+$mobile-s-above: 481px;
+$mobile-s: 480px;
+
+$mobile-n-above: 376px;
+$mobile-n: 375px;
+
+@mixin desktop-above {
+  @media (min-width: $desktop-above) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin tablet-above {
+  @media (min-width: $tablet-above) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile-above {
+  @media (min-width: $mobile-above) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin mobile-s-above {
+  @media (min-width: $mobile-s-above) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media (max-width: $mobile-s) {
+    @content;
+  }
+}
+
+@mixin mobile-n-above {
+  @media (min-width: $mobile-n-above) {
+    @content;
+  }
+}
+
+@mixin mobile-n {
+  @media (max-width: $mobile-n) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}
+
+@mixin link-gradient {
+  @include hover {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    translate: -50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #9b7cff, #4dd0e1);
+    transition: width 0.3s ease;
+  }
+
+  outline: none;
+
+  &:focus-visible {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+@mixin link-gradient-yellow {
+  position: relative;
+  text-decoration: none;
+  outline: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1.5px;
+    background-color: #d4ff3b;
+    transition: width 0.3s ease;
+  }
+
+  @include hover {
+    &:hover {
+      color: var(--color-light, #ffffff);
+      transition: color 0.3s ease;
+    }
+  }
+
+  &:focus-visible {
+    color: var(--color-light, #ffffff);
+    transition: color 0.3s ease;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    width: 100%;
+  }
+}
+
+
