@@ -3,6 +3,21 @@
 ## 🔗 Live Demo
 👉 [https://whalter26.github.io/TrendyMinimalism/]
 
+---
+
+## 🖼 Preview
+
+### 🖥 Desktop
+![Desktop](./preview-desktop.png)
+
+### 📱 Mobile
+![Mobile](./preview-mobile.png)
+
+### Full page
+![Full preview](./preview-desktop-full.png)
+
+---
+
 Responsive landing page for a creative community platform featuring interactive UI elements, adaptive layouts and touch-friendly interactions.
 
 The project was built independently to practice modern frontend development approaches, responsive design, component-based styling and user interaction patterns.
