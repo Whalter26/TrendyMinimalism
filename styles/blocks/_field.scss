@@ -27,10 +27,9 @@
     border-color: #00e5ff;
 
 
-    box-shadow:
-      0 0 0 1px #d4ff3b,
-      0 8px 20px rgba(212, 255, 59, 0.45),
-      0 0 15px rgba(0, 229, 255, 0.35);
+    box-shadow: 0 0 0 1px #d4ff3b,
+    0 8px 20px rgba(212, 255, 59, 0.45),
+    0 0 15px rgba(0, 229, 255, 0.35);
   }
 
   &__input {
@@ -47,8 +46,6 @@
     &::placeholder {
       color: transparent;
     }
-
-
   }
 
   &__label {
