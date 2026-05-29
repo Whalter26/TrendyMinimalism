@@ -1,26 +1,51 @@
 # 🎨 Trendy Minimalism — Responsive Landing Page
 
-## 🔗 Live Demo
-👉 [https://whalter26.github.io/TrendyMinimalism/]
-
----
-
-## 🖼 Preview
-
-### 🖥 Desktop
-![Desktop](./preview-desktop.png)
-
-### 📱 Mobile
-![Mobile](./preview-mobile.png)
-
-### Full page
-![Full preview](./preview-desktop-full.png)
-
 ---
 
 Responsive landing page for a creative community platform featuring interactive UI elements, adaptive layouts and touch-friendly interactions.
 
 The project was built independently to practice modern frontend development approaches, responsive design, component-based styling and user interaction patterns.
+
+---
+
+## 🔗 Live Demo
+👉 [https://whalter26.github.io/TrendyMinimalism/]
+
+---
+
+## 🛠 Technologies
+
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
+* SCSS
+* Flexbox / CSS Grid
+* BEM
+* Responsive Design
+* CSS Custom Properties
+
+---
+
+## 🖼 Preview
+
+<table width="100%">
+  <tr>
+    <td width="65%" align="center" valign="top">
+      <h3>🖥 Desktop</h3>
+      <img src="./preview-desktop.png" alt="Desktop" width="100%">
+    </td>
+    <td width="35%" align="center" valign="top">
+      <h3>📱 Mobile</h3>
+      <img src="./preview-mobile.png" alt="Mobile" width="100%">
+    </td>
+  </tr>
+</table>
+
+<details>
+<summary>🔍 Посмотреть страницу целиком (Full page preview)</summary>
+<br>
+<img src="./preview-desktop-full.png" alt="Full preview" width="100%">
+</details>
 
 ---
 
@@ -59,20 +84,6 @@ The project was built independently to practice modern frontend development appr
 * Gradients and smooth transitions
 * Responsive spacing and typography system
 * Consistent SVG coloring using `currentColor`
-
----
-
-## 🛠 Technologies
-
-* HTML5
-* CSS3
-* JavaScript (Vanilla JS)
-* SCSS
-* Flexbox / CSS Grid
-* BEM
-* Responsive Design
-* CSS Custom Properties
-
 ---
 
 ## 📌 What I Practiced in This Project
