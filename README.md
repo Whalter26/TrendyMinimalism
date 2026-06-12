@@ -9,7 +9,7 @@ The project was built independently to practice modern frontend development appr
 ---
 
 ## 🔗 Live Demo
-👉 [https://whalter26.github.io/TrendyMinimalism/]
+👉 [Live Demo](https://whalter26.github.io/TrendyMinimalism/)
 
 ---
 
